@@ -1,30 +1,9 @@
 import React, { useEffect, useState } from "react"
 import Header from "./header"
 import Product from "./product"
-import axios from "axios"
 import { useStateValue } from "./stateProvider"
-import { Link } from "react-router-dom"
 let db = require("./db.json")
-// export const products = [
-//   {
-//     key: "1",
-//     id: "1",
-//     title: "The Lean Startup",
-//     image:
-//       "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg",
-//     price: "19.99",
-//     rating: 5,
-//   },
-//   {
-//     key: "2",
-//     id: "2",
-//     title: "Zero to One",
-//     image:
-//       "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg",
-//     price: "19.99",
-//     rating: 5,
-//   },
-// ]
+
 const products = db.products
 const Home = () => {
   const { user } = useStateValue()
@@ -41,7 +20,7 @@ const Home = () => {
             id={product.id}
             title={product.title}
             image={product.image}
-            price={product.price}
+            price={product.amount}
             rating={product.rating}
           />
         ))}
