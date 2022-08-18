@@ -44,11 +44,4 @@ yarn build
 
 Esto nos va a dejar los archivos para la pagina web estatica optimizada en _/build_
 
-## Possible Future Additions:
-
-- Third Party Payment Integration
-- Third Party Auth like Google, Facebook, etc.
-- Recaptcha for security
-- Reccommendations/ Frequently Bought Together
-- Forgot Password
-- For-You-Page based on favorites and previous orders
+Alternativamente se pueden utilizar los archivos comprimidos en _ static-website-aws-s3.zip_, para descomprimirlos y de ahi subirlos a S3.
