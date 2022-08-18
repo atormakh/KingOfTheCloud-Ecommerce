@@ -45,3 +45,24 @@ yarn build
 Esto nos va a dejar los archivos para la pagina web estatica optimizada en _/build_
 
 Alternativamente se pueden utilizar los archivos comprimidos en _ static-website-aws-s3.zip_, para descomprimirlos y de ahi subirlos a S3.
+
+## Bucket Policy para el S3 Bucket que va a hostear la pagina
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Your-Bucket-Name-Here-Please/*"
+            ]
+        }
+    ]
+}
+```
