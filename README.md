@@ -1,40 +1,48 @@
-# Ecommerce Website
+# AWS: King Of The Cloud-Ecommerce Website
 
-A simple Ecommerce website built with react and tailwind CSS. JSON server used for the backend to store user data for authentication, orders, favorites.
-
-Context API used for state management, React Router used for navigation.
-<div>
-<img src="https://shields.io/badge/build-passing-green">
-<img src="https://img.shields.io/badge/license-MIT-green">
-<img src="https://img.shields.io/github/commit-activity/w/gauthumj/krypto-ecommerce-website">
-</div>
+Es una simple pagina de Ecommerce hecha en React + tailwind CSS que creamos para ir desarrollando y evolucionando a traves de las diferentes clases.
 
 ## Home Page
 
 <img src="./images/home.png">
-<img src="./images/home2.png">
 
-### Favorites:
-<img src="./images/favorites.png">
+## Quick Start
 
-## Product Page
+### Requisito Previo
 
-<img src="./images/productpage.png">
+Para poder correr el proyecto tenes que tener instalado `React`, para eso tambien vas a necesitar tener instalado `Nodejs` y `NPM`.
 
-## Login/Signup Page
+### Iniciar el proyecto
 
-<img src="./images/login.png">
-<img src="./images/login2.png">
-<img src="images/users.png">
+Instalar todas las dependencias necesarias para el proyecto:
 
-> User can signup by clicking create account and using the same input fields as the signup form.
+```
+npm install
+o
+yarn
+```
 
+En el archivo _package.json_ en la raiz del proyecto, hay una seccion de _scripts_ en donde se encuentran todos los comandos preconfigurados del proyecto para ciertas acciones. Entre ellas las de arrancar el server para desarrollo.Que va a intentar correr el proyecto segun los archivos en _/src_.
 
-## Checkout Page
+Para iniciar el proyecto en desarrollo en el puerto 3000:
 
-<img src="./images/checkout.png">
-<img src="./images/checkoutconfirm.png">
-<img src="./images/orders.png">
+```
+npm run start
+o
+yarn start
+```
+
+### Empaquetar el proyecto para subirlo a AWS S3
+
+Para esto necesitamos que React nos empaquete la pagina web que estamos desarrollando en una version estatica y optimizada para que sea lo mas pequena posible.
+
+```
+npm run build
+o
+yarn build
+```
+
+Esto nos va a dejar los archivos para la pagina web estatica optimizada en _/build_
 
 ## Possible Future Additions:
 
