@@ -1,0 +1,16 @@
+service: king-of-the-cloud-project
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  iam:
+    role: arn:aws:iam::262576497644:role/LabRole
+
+functions:
+  getProducts:
+    handler: src/functions/get.handler
+    events:
+      - httpApi:
+          path: /products
+          method: get
