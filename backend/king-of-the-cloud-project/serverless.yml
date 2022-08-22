@@ -9,8 +9,14 @@ provider:
 
 functions:
   getProducts:
-    handler: src/functions/get.handler
+    handler: src/functions/products/get.handler
     events:
       - httpApi:
           path: /products
           method: get
+  createUser:
+    handler: src/functions/users/post.handler
+    events:
+      - httpApi:
+          path: /users
+          method: post
