@@ -1,6 +1,8 @@
 "use strict"
+//GET PRODUCTS
+module.exports.handler = async (event) => {
+  //GET ALL PRODUCTS FROM DATABASE
 
-module.exports.handler = async (event, context, callback) => {
   const products = [
     {
       id: 1,
@@ -53,7 +55,8 @@ module.exports.handler = async (event, context, callback) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: "Go Serverless v3.0! Buenisimo",
+      message: "ok - Segundo Espina Mairal",
+      code: 200,
       data: {
         products: products,
       },

@@ -1,0 +1,11 @@
+{
+  "name": "king-of-the-cloud-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "atormakh",
+  "license": "MIT",
+  "devDependencies": {
+    "aws-sdk": "^2.1203.0",
+    "serverless-offline": "^9.2.6"
+  }
+}
